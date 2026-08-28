@@ -2,8 +2,8 @@ name: Build sida-eltdx
 
 on:
   # 监听上游 eltdx 新 release
-  repository:
-    types: [released]
+  release:
+    types: [published]
   workflow_dispatch:
     inputs:
       eltdx_version:
